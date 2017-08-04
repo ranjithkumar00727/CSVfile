@@ -70,7 +70,7 @@
                     out.println("Query : "+query);
                     st.executeUpdate(query);
                 }
-                out.println("Data inserted...");
+                out.println("Data inserted...!!");
                 db1.close();
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
