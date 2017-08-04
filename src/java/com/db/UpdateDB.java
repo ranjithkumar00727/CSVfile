@@ -14,6 +14,7 @@
     import javax.servlet.http.HttpServletResponse;
 
     import com.csvreader.CsvReader;
+import java.sql.SQLException;
 
     /**
      * Servlet implementation class UpdateDatabase
@@ -73,9 +74,7 @@
                 out.println("Data inserted...!!");
                 db1.close();
             } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (Exception e) {
-                e.printStackTrace();
+            } catch (IOException | ClassNotFoundException | NumberFormatException | SQLException e) {
             }
 
         }
